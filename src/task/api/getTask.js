@@ -9,7 +9,7 @@ const toJson = async (res) => {
 
 //未完タスク一覧を取得
 export const getTask = async () =>{
-    const res = await fetch('//dailyreportapp.herokuapp.com/task/', {
+    const res = await fetch('https://dailyreportapp.herokuapp.com/task/', {
         method: 'GET',
     })
     return await toJson(res);
@@ -17,7 +17,7 @@ export const getTask = async () =>{
 
 //完了タスク一覧を取得
 export const getTaskFinished = async () =>{
-    const res = await fetch('//dailyreportapp.herokuapp.com/task/finished/', {
+    const res = await fetch('https://dailyreportapp.herokuapp.com/task/finished/', {
         method: 'GET',
     })
     return await toJson(res);

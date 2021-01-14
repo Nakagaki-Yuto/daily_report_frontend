@@ -9,7 +9,7 @@ const toJson = async (res) => {
 
 //日報一覧を取得
 export const getDaily = async () =>{
-    const res = await fetch('//dailyreportapp.herokuapp.com/daily/', {
+    const res = await fetch('https://dailyreportapp.herokuapp.com/daily/', {
         method: 'GET',
     })
     return await toJson(res);
@@ -17,7 +17,7 @@ export const getDaily = async () =>{
 
 //1日の詳細を取得
 export const getDailyDetail = async (id) => {
-    const res = await fetch(`//dailyreportapp.herokuapp.com/daily/${id}`, {
+    const res = await fetch(`https://dailyreportapp.herokuapp.com/daily/${id}`, {
         method : 'GET',
     })
     return await toJson(res);
@@ -25,7 +25,7 @@ export const getDailyDetail = async (id) => {
 
 //カテゴリ別一覧を取得
 export const getCategory = async (cat) => {
-    const res = await fetch(`//dailyreportapp.herokuapp.com/daily/${cat}`, {
+    const res = await fetch(`https://dailyreportapp.herokuapp.com/daily/${cat}`, {
         method: 'GET',
     })
     return await toJson(res)
