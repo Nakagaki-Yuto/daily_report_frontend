@@ -13,13 +13,12 @@
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
+  "homepage": "./",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "main -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -44,7 +43,6 @@
     "gh-pages": "^3.1.0",
     "mini-css-extract-plugin": "^1.3.3",
     "optimize-css-assets-webpack-plugin": "^5.0.4",
-    "terser-webpack-plugin": "^5.1.1",
-    "homepage": "https://nakagaki-yuto.github.io/daily_report_frontend/"
+    "terser-webpack-plugin": "^5.1.1"
   }
 }
